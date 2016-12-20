@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(true)
-        print("Getting out...")
+        print("It was Moving out but gonna be hehe")
     }
 
 
