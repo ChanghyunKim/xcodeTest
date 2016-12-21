@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("What the heck!!")
+        print("16.12.21.10:52")
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,12 +22,8 @@ class ViewController: UIViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(true)
-        print("It was Moving out but gonna be hehe")
-    } 
-    @IBAction func next(_ sender: UIBarButtonItem) {
+        print("hi hello welcome")
     }
-
-    @IBAction func backToMain(_ sender: UIButton) { }
     
 }
 
