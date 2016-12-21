@@ -13,16 +13,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("What the heck!!")
-        print("16.12.21.10:52")
+        print("16.12.21.11:16")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(true)
-        print("hi hello welcome")
+    @IBAction func nextPage(_ sender: UIBarButtonItem) {
+        self.performSegue(withIdentifier: "next", sender: self)
+    }
+    
+    @IBAction func backback(_: UIStoryboardSegue) {
+        
     }
     
 }

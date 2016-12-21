@@ -36,11 +36,52 @@
                             <constraint firstAttribute="trailingMargin" secondItem="AoR-ov-89a" secondAttribute="trailing" constant="40" id="wXB-ql-wdj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="First Page" id="Tal-EO-rax"/>
+                    <navigationItem key="navigationItem" title="First Page" id="Tal-EO-rax">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="kgU-N0-2ge">
+                            <connections>
+                                <action selector="nextPage:" destination="BYZ-38-t0r" id="MEt-Ke-EJl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="udt-Jf-FWv" kind="show" identifier="next" id="Pfk-rO-VKG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="972" y="37.331334332833585"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="gtt-AO-9B9">
+            <objects>
+                <viewController id="udt-Jf-FWv" customClass="secondViewController" customModule="xcodeGithubTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fZ3-cR-36q"/>
+                        <viewControllerLayoutGuide type="bottom" id="oMY-3l-jXb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k4O-KB-MfC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1X-Ml-hZr">
+                                <rect key="frame" x="128" y="72" width="118.5" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="j1X-Ml-hZr" firstAttribute="top" secondItem="fZ3-cR-36q" secondAttribute="bottom" constant="8" id="e7I-wz-JAa"/>
+                            <constraint firstItem="j1X-Ml-hZr" firstAttribute="centerX" secondItem="k4O-KB-MfC" secondAttribute="centerX" id="nBl-Od-Zmi"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eVK-KM-2e9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1668" y="37"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dOz-fx-173">
