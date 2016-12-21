@@ -13,14 +13,18 @@ class secondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Hi this is second view controller")
+        self.add()
     }
     
     @IBAction func back(_ sender: UIButton) {
         self.performSegue(withIdentifier: "", sender: self)
     }
     
+    func add() {
+        print("that's a lie!!")
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
     }
 }
