@@ -23,7 +23,10 @@ class ViewController: UIViewController {
         super.viewDidDisappear(true)
         print("It was Moving out but gonna be hehe")
     } 
+    @IBAction func next(_ sender: UIBarButtonItem) {
+    }
 
-
+    @IBAction func backToMain(_ sender: UIButton) { }
+    
 }
 

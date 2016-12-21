@@ -15,6 +15,10 @@ class secondViewController: UIViewController {
         print("Hi this is second view controller")
     }
     
+    @IBAction func back(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "", sender: self)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
